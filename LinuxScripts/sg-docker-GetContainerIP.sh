@@ -1,4 +1,5 @@
-﻿param ($cn = $(throw "Nome do Container é necessário!"))
+﻿#!/usr/bin/bash
+param ($cn = $(throw "Nome do Container é necessário!"))
 
 function GetContainerIP {
   $error.clear()
