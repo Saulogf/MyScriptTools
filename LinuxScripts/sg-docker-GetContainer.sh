@@ -1,5 +1,4 @@
-﻿param ($cn = $(throw "Nome do Container é necessário!"))
-
+#/bin/#!/usr/bin/env bash
 function GetContainerIP {
   $error.clear()
   $container_ip = docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $cn
